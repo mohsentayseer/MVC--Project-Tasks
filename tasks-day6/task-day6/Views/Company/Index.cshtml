@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Company>
+@{
+}
+<table class="table table-warning">
+    <thead style="color: saddlebrown; border-radius: 10px 10px 0 0;">
+
+    <tr>
+        <th>Name</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td><a asp-action="Edit" asp-controller="Company" asp-route-id="@item.Id" class="btn btn-warning">Edit</a></td>
+            <td><a href="/Company/Delete/@item.Id " class="btn btn-danger">Delete</a></td>
+        </tr>
+    }
+</table>
+<a href="~/Company/Create" class="btn btn-success">Add Company</a>
+<br />
+<br />
+<a href="~/Drug/index" class="btn btn-primary">Go to Drug Table </a>

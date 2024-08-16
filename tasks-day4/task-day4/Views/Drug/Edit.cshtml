@@ -1,0 +1,34 @@
+﻿@model Drug
+
+
+<h1>Edit @Model.Name Drug </h1>
+
+<div class="row">
+    <div class="col-8">
+        @using (Html.BeginForm())
+        {
+            @Html.LabelFor(d => d.Id)
+            @* @Html.EditorFor(d => d.Id, new { htmlAttributes = new { @class = "form-control" } }) *@
+            @Html.TextBoxFor(d => d.Id, htmlAttributes: new { @readonly = "readonly", @class = "form-control my-1" })
+            @Html.LabelFor(d => d.Name)
+            @Html.TextBoxFor(d => d.Name, htmlAttributes: new { @class = "form-control my-1" })
+
+            @Html.LabelFor(d => d.CompanyName)
+            @Html.TextBoxFor(d => d.CompanyName, htmlAttributes: new { @class = "form-control my-1" })
+            @Html.LabelFor(d => d.ManufactureDate)
+            @Html.TextBoxFor(d => d.ManufactureDate, htmlAttributes: new { @class = "form-control my-1" })
+            @Html.LabelFor(d => d.ExpirationDate)
+            @Html.TextBoxFor(d => d.ExpirationDate, htmlAttributes: new { @class = "form-control my-1" })
+            @Html.LabelFor(d => d.ImagePath)
+            @Html.TextBoxFor(d => d.ImagePath, htmlAttributes: new { @class = "form-control my-1" })
+            <div class="row mb-3 my-3">
+            <button type="submit" class="btn btn-success col-3 mx-3">Submit</button>
+                <br />
+                <a href="/Drug" class="btn btn-primary col-3">Back to Drugs List</a>
+            </div>
+        }
+        </div>
+    <div class="col-4 ml-4">
+        <img src="@Model.ImagePath" class="card-img-top" alt="..." style="width: 14rem;">
+    </div>
+</div>

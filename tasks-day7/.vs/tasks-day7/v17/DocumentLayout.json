@@ -1,0 +1,110 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ITI\\MVC\\day7\\tasks-day7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B2FE1B5-210C-4DC4-989D-E76AAB22A860}|task1-day7\\task1(dependancyinjection)-day7.csproj|d:\\iti\\mvc\\day7\\tasks-day7\\task1-day7\\repository\\companyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B2FE1B5-210C-4DC4-989D-E76AAB22A860}|task1-day7\\task1(dependancyinjection)-day7.csproj|solutionrelative:task1-day7\\repository\\companyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B2FE1B5-210C-4DC4-989D-E76AAB22A860}|task1-day7\\task1(dependancyinjection)-day7.csproj|d:\\iti\\mvc\\day7\\tasks-day7\\task1-day7\\repository\\drugrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B2FE1B5-210C-4DC4-989D-E76AAB22A860}|task1-day7\\task1(dependancyinjection)-day7.csproj|solutionrelative:task1-day7\\repository\\drugrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B2FE1B5-210C-4DC4-989D-E76AAB22A860}|task1-day7\\task1(dependancyinjection)-day7.csproj|d:\\iti\\mvc\\day7\\tasks-day7\\task1-day7\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B2FE1B5-210C-4DC4-989D-E76AAB22A860}|task1-day7\\task1(dependancyinjection)-day7.csproj|solutionrelative:task1-day7\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B2FE1B5-210C-4DC4-989D-E76AAB22A860}|task1-day7\\task1(dependancyinjection)-day7.csproj|d:\\iti\\mvc\\day7\\tasks-day7\\task1-day7\\controllers\\drugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B2FE1B5-210C-4DC4-989D-E76AAB22A860}|task1-day7\\task1(dependancyinjection)-day7.csproj|solutionrelative:task1-day7\\controllers\\drugcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DrugController.cs",
+              "DocumentMoniker": "D:\\ITI\\MVC\\day7\\tasks-day7\\task1-day7\\Controllers\\DrugController.cs",
+              "RelativeDocumentMoniker": "task1-day7\\Controllers\\DrugController.cs",
+              "ToolTip": "D:\\ITI\\MVC\\day7\\tasks-day7\\task1-day7\\Controllers\\DrugController.cs",
+              "RelativeToolTip": "task1-day7\\Controllers\\DrugController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T15:57:32.292Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompanyController.cs",
+              "DocumentMoniker": "D:\\ITI\\MVC\\day7\\tasks-day7\\task1-day7\\Controllers\\CompanyController.cs",
+              "RelativeDocumentMoniker": "task1-day7\\Controllers\\CompanyController.cs",
+              "ToolTip": "D:\\ITI\\MVC\\day7\\tasks-day7\\task1-day7\\Controllers\\CompanyController.cs",
+              "RelativeToolTip": "task1-day7\\Controllers\\CompanyController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T16:24:33.804Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CompanyRepository.cs",
+              "DocumentMoniker": "D:\\ITI\\MVC\\day7\\tasks-day7\\task1-day7\\Repository\\CompanyRepository.cs",
+              "RelativeDocumentMoniker": "task1-day7\\Repository\\CompanyRepository.cs",
+              "ToolTip": "D:\\ITI\\MVC\\day7\\tasks-day7\\task1-day7\\Repository\\CompanyRepository.cs",
+              "RelativeToolTip": "task1-day7\\Repository\\CompanyRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T19:10:23.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DrugRepository.cs",
+              "DocumentMoniker": "D:\\ITI\\MVC\\day7\\tasks-day7\\task1-day7\\Repository\\DrugRepository.cs",
+              "RelativeDocumentMoniker": "task1-day7\\Repository\\DrugRepository.cs",
+              "ToolTip": "D:\\ITI\\MVC\\day7\\tasks-day7\\task1-day7\\Repository\\DrugRepository.cs",
+              "RelativeToolTip": "task1-day7\\Repository\\DrugRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T19:09:50.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

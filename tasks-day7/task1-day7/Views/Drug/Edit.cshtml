@@ -1,0 +1,45 @@
+﻿@model Drug
+
+<h1>Edit @Model.Name Drug </h1>
+
+<div class="row">
+    <div class="col-8">
+        <form action="/Drug/Edit" method="post">
+                <input asp-for="Id" type="number" class="form-control" hidden>
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label"><strong>Name</strong></label>
+                <input asp-for="Name" type="text" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label asp-for="CompanyId" class="form-label"><strong>Company Name</strong></label>
+                <select asp-items="ViewBag.Companies" asp-for="CompanyId" class="form-control my-2"></select>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="ManufactureDate" class="form-label"><strong>Manufacture Date</strong></label>
+                <input asp-for="ManufactureDate" type="date" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="ExpirationDate" class="form-label"><strong>Expiration Date</strong></label>
+                <input asp-for="ExpirationDate" type="date" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="ImagePath" class="form-label"><strong>Image Link</strong></label>
+                <input asp-for="ImagePath" type="text" class="form-control">
+            </div>
+
+
+
+            <div class="row mb-3 my-3">
+                <button type="submit" class="btn btn-success col-3 mx-3">Submit</button>
+                <br />
+                <a href="/Drug" class="btn btn-primary col-3">Back to Drugs List</a>
+            </div>
+        </form>
+    </div>
+    <div class="col-4 ml-4">
+        <img src="@Model.ImagePath" class="card-img-top" alt="..." style="width: 14rem;">
+    </div>
+</div>

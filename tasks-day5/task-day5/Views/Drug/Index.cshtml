@@ -1,0 +1,31 @@
+﻿@model List<Drug>;
+
+<table class="table" style="border: 1px solid #e0e0e0; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+    <thead style="background-color: #007bff; color: white; border-radius: 10px 10px 0 0;">
+        <tr>
+            <th>#</th>
+            <th>Drug Name</th>
+            <th>Company Name</th>
+            <th>Manufacture Date</th>
+            <th>Image</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var drug in Model)
+        {
+            <tr style="border-bottom: 1px solid #e0e0e0;">
+                <th scope="row">@drug.Id</th>
+                <td>@drug.Name</td>
+                <td>@drug.CompanyName</td>
+                <td>@drug.ManufactureDate.ToString("yyyy-MM-dd")</td>
+                <td><img src="@drug.ImagePath" height="100" style="padding: 2px; border-radius: 5px;" /></td>
+                <td><a href="/Drug/Edit/@drug.Id" class="btn btn-secondary">Edit</a></td>
+                @* <td>@Html.ActionLink("Edit", "Edit", "Drug", htmlAttributes: new { @class = "btn btn-secondary" }, routeValues: new { drug.Id })</td> *@
+                <td><a href="/Drug/Delete/@drug.Id " class="btn btn-danger">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/Drug/Create" class="btn btn-success btn-lg mt-3">Add New Drug</a>

@@ -1,0 +1,14 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Student student = ViewData["student"] as Student;
+}
+
+<ul>
+    <li>Name: @ViewData["Name"]</li>
+    <li>Age: @ViewData["Age"]</li>
+    <li>Address: @ViewData["Address"]</li>
+    <li>Image: <img src="~/images/@ViewData["ImagePath"]" /></li>
+    <li><a href="~/student/GetAll">Back to List</a></li>
+</ul>

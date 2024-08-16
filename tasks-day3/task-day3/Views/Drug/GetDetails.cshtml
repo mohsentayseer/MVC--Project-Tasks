@@ -1,0 +1,15 @@
+﻿@{
+    Drug drug = ViewBag.drug;
+}
+<div class="container">
+    <div style="width: 20rem; border-radius: 10px; overflow: hidden;">
+        <img src="@drug.ImagePath" class="card-img-top" alt="..." style="width: 14rem;">
+        <div class="card-body" style="background-color: #f9f9f9; padding: 20px;border-top: 2px solid #000">
+            <h5 class="card-title" style="color:saddlebrown">@drug.Name</h5>
+            <p class="card-text"><strong>Company:</strong> @drug.CompanyName</p>
+            <p class="card-text"><strong>Manufacture Date:</strong> @drug.ManufactureDate.ToShortDateString()</p>
+            <p class="card-text"><strong>Expiration Date:</strong> @drug.ExpirationDate.ToShortDateString()</p>
+        </div>
+        <a href="/Drug" class="btn btn-primary btn-block">Back to Drugs List</a>
+    </div>
+</div>

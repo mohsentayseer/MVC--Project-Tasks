@@ -1,0 +1,10 @@
+﻿@model List<Company>
+    <div class="form-group">
+        <label for="companyDropdown" class="form-label">Available Companies</label>
+    <select id="companyDropdown" class="form-control">
+            @foreach (var item in Model)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+    </div>

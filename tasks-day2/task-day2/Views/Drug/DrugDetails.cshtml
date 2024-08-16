@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Drug drug = ViewData["drug"] as Drug;
+    <img src="~/images/@drug.ImagePath" />
+    <br />
+    <br />
+    <div style="background-color:aqua;width:300px">
+    <h1 style="color:saddlebrown">@drug.Name</h1>
+    <p>@drug.Description</p>
+    <p>@drug.Price L.E</p>
+    <br />
+    <a href="~/Drug/GetAll">Back to Drugs List</a>
+    </div>
+}

@@ -1,0 +1,58 @@
+﻿@page
+@model stApp_RazorPage.Pages.SettingsModel
+@{
+    Layout = "_MyLayout";
+}
+@* @{
+    string lolo = "mohsen";
+    int x = 9;
+}
+<h1>Hello from my Razor Page @lolo</h1>
+@for (int i = 0; i < x; i++)
+{
+    <p>Index: @i</p>
+}) *@
+
+<form>
+    <br /><br />
+    <h1>ENTER YOUR DATA</h1>
+    <label>enter your id:</label>
+    <input type="text" name="id" /><br /><br />
+    <label>enter your name:</label>
+    <input type="text" name="name" /><br /><br />
+    <label>enter your address:</label>
+    <input type="text" name="address" /><br /><br />
+    <label>enter your Age:</label>
+    <input type="number" name="age"/>
+    <input type="radio" name="gender" value="male" />
+    <label for="male">Male</label>
+    <input type="radio" name="gender" value="female" />
+    <label for="female">Female</label><br /><br />
+    <input type="submit" value="Submit" />
+
+</form>
+@{
+    string? id = Request.Query["id"];
+    string? name = Request.Query["name"];
+    string? address = Request.Query["address"];
+    string? age = Request.Query["age"];
+    string? gender = Request.Query["gender"];
+
+    if (id != null && name != null && address != null && age != null && gender != null)
+    {
+        int? int_age = int.Parse(age);
+        if (int_age >= 18)
+        {
+            string color = gender == "male" ? "blue" : "pink";
+                <h1> Hello @name</h1>
+                <p>your id: @id</p>
+                <p>your address: @address</p>
+                <p>your age: @age</p>
+                <p>Your gender: <span style="color:@color">@gender</span></p>
+        }
+        else
+        {
+            <h1 style="color:red">Sorry! you are not allowed to enter your data</h1>
+        }
+    }
+}

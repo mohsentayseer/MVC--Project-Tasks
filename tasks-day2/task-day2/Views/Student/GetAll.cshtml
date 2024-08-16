@@ -1,0 +1,17 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@* <h1>My Variable is = @ViewData["myVar"]</h1> *@
+@* @foreach(var student in (List<Student>)ViewData["students"]) CASTING *@
+
+@foreach (var student in ViewData["students"] as List<Student>)
+{
+    <h1>@student.Name</h1>
+    <h1>@student.Age</h1>
+    <h1>@student.Address</h1>
+    @* <img src="@student.ImagePath"/> *@
+     <img src="~/images/@student.ImagePath"/>
+     <a href="~/student/ViewDetails/@student.Id">View Details</a>
+})

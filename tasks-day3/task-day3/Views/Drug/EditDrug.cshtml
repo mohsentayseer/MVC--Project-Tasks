@@ -1,0 +1,47 @@
+﻿@{
+    Drug drug = ViewBag.drug;
+}
+<h1>Edit @drug.Name Drug </h1>
+<div class="row">
+    <div class="col-8">
+        <form action="/Drug/UpdateDrug">
+            <div class="my-1">
+                <input type="hidden" class="form-control" id="id" name="id" value="@drug.Id">
+            </div>
+            <div class="my-3">
+                <label for="name" class="form-label"><strong>Name</strong></label>
+                <input type="text" class="form-control" id="name" name="name" value="@drug.Name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="companyName" class="form-label"><strong>Company Name</strong></label>
+                <input type="text" class="form-control" id="companyName" name="companyName" value="@drug.CompanyName" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="manufactureDate" class="form-label"><strong>Manufacture Date</strong></label>
+                <input type="date" class="form-control" id="manufactureDate" name="manufactureDate" value="@drug.ManufactureDate.ToString("yyyy-MM-dd")" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="expirationDate" class="form-label"><strong>Expiration Date</strong></label>
+                <input type="date" class="form-control" id="expirationDate" name="expirationDate" value="@drug.ExpirationDate.ToString("yyyy-MM-dd")" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="image" class="form-label"><strong>Image Link</strong></label>
+                <input type="text" class="form-control" id="image" name="image" value="@drug.ImagePath" required>
+            </div>
+
+            <div class="row mb-3">
+                <button type="submit" class="btn btn-success col-3 mx-2">Submit</button>
+                <br />
+                <a href="/Drug" class="btn btn-primary col-3">Back to Drugs List</a>
+            </div>
+        </form>
+
+    </div>
+    <div class="col-4 ml-4 ">
+        <img src="@drug.ImagePath" class="card-img-top" alt="..." style="width: 14rem;">
+    </div>
+</div>
